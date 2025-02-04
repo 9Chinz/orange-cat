@@ -1,0 +1,11 @@
+{
+  "name": "orange-cat",
+  "type": "module",
+  "scripts": {
+    "dev": "turbo watch dev"
+  },
+  "dependencies": {
+    "turbo": "^2.4.0"
+  },
+  "packageManager": "pnpm@9.7.1"
+}

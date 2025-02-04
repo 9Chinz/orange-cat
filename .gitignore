@@ -1,0 +1,14 @@
+.DS_Store
+.docker-buildx-cache
+.env
+!.env.example
+.next
+.turbo
+dist
+node_modules
+storybook-static
+packages/payload-config/tsup.config.*
+
+
+out
+tempDockerfile
