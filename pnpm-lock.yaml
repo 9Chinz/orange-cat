@@ -56,6 +56,10 @@ importers:
         version: 6.0.11(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.29.1)
 
   packages/shared/core-type:
+    dependencies:
+      valibot:
+        specifier: 1.0.0-beta.15
+        version: 1.0.0-beta.15(typescript@5.6.3)
     devDependencies:
       '@tools/eslint-config':
         specifier: workspace:*
@@ -2290,6 +2294,14 @@ packages:
 
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
+
+  valibot@1.0.0-beta.15:
+    resolution: {integrity: sha512-BKy8XosZkDHWmYC+cJG74LBzP++Gfntwi33pP3D3RKztz2XV9jmFWnkOi21GoqARP8wAWARwhV6eTr1JcWzjGw==}
+    peerDependencies:
+      typescript: '>=5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   vite@6.0.11:
     resolution: {integrity: sha512-4VL9mQPKoHy4+FE0NnRE/kbY51TOfaknxAjt3fJbGJxhIpBZiqVzlZDEesWWsuREXHwNdAoOFZ9MkPEVXczHwg==}
@@ -4767,6 +4779,10 @@ snapshots:
   uri-js@4.4.1:
     dependencies:
       punycode: 2.3.1
+
+  valibot@1.0.0-beta.15(typescript@5.6.3):
+    optionalDependencies:
+      typescript: 5.6.3
 
   vite@6.0.11(@types/node@22.13.1)(jiti@2.4.2)(lightningcss@1.29.1):
     dependencies:
