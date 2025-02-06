@@ -13,7 +13,6 @@ import parserTs from '@typescript-eslint/parser'
  */
 export const strictConfig = [
   ...baseConfig,
-  ...tseslint.configs.recommended,
   ...tseslint.configs.strict,
   ...tseslint.configs.stylistic,
   {
@@ -28,6 +27,10 @@ export const strictConfig = [
     rules: {
       "no-undef": "error",
       "no-console": "warn",
+      "@typescript-eslint/consistent-type-definitions": [
+        "error",
+        "type"
+      ],
       '@stylistic/ts/indent': ['error', 2],
       '@stylistic/ts/quotes': ['error', 'single'],
       '@stylistic/ts/semi': ['error', 'never'],
