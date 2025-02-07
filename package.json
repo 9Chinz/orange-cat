@@ -3,7 +3,8 @@
   "type": "module",
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo watch dev"
+    "dev": "turbo watch dev",
+    "dev:api-server": "turbo watch dev --filter=@apps/server-api"
   },
   "dependencies": {
     "turbo": "^2.4.0"

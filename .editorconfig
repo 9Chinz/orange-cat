@@ -22,6 +22,8 @@ indent_size = 2
 end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
+quote_type = single
+semicolon = false
 
 [*.mjs, *.js, *.cjs, *.ts, *.json]
 charset = utf-8
